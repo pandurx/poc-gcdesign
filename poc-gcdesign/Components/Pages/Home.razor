@@ -1,0 +1,37 @@
+﻿@page "/"
+
+<PageTitle>Home</PageTitle>
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+<EditForm Model="@Person" OnSubmit="SubmitForm" FormName="testing">
+    <gcds-input input-id="Person.Surname"
+                label="Label"
+                hint="Hint / example message."
+                required 
+                lang="fr">
+    </gcds-input>
+
+    <InputText @bind-Value=Person!.Surname />
+
+
+    <button type="submit" class="mt-2 btn btn-primary btn-block mb-4 mt-4">Submit</button>
+</EditForm>
+
+
+<script>
+    // export const requiredTestField: Validator<string> = {
+    //     validate: (value: string) =>
+    //         value != null &&
+    //         value.trim() != '' &&
+    //         (value.toLowerCase().match(emailPattern) ? true : false),
+    //     errorMessage: {
+    //         en: 'Enter a valid email address to continue. Use a standard format. Example: name@address.ca.',
+    //         fr: 'Saisissez votre adresse courriel pour continuer. Utilisez un format standard. Exemple: nom@adresse.ca.',
+    //     },
+    // };
+</script>
+
+
