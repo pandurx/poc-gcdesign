@@ -10,7 +10,6 @@
 Welcome to your new app.
 
 <EditForm Model="@Person" OnValidSubmit="SubmitForm" OnInvalidSubmit="InvalidSubmission" FormName="testing">
-    <FluentValidationValidator @ref="_fluentValidationValidator" />
     <ValidationSummary />
     <gcds-input input-id="Person.Surname"
                 label="Label"
@@ -27,10 +26,5 @@ Welcome to your new app.
     </gcds-input>
     <button type="submit" class="mt-2 btn btn-primary btn-block mb-4 mt-4">Submit</button>
 </EditForm>
-
-
-<script>
-
-</script>
 
 
