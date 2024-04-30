@@ -9,7 +9,7 @@
 
 Welcome to your new app.
 
-<EditForm Model="@Person" OnSubmit="SubmitForm" FormName="testing">
+<EditForm Model="@Person" OnValidSubmit="SubmitForm" OnInvalidSubmit="InvalidSubmission" FormName="testing">
     <FluentValidationValidator @ref="_fluentValidationValidator" />
     <ValidationSummary />
     <gcds-input input-id="Person.Surname"
